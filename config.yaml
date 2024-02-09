@@ -1,11 +1,13 @@
 baseURL: /
-languageCode: en-us
+languageCode: ja
+publishDir: docs
+canonifyurls: true
 build:
   writeStats: true
 params:
-  title: aafu theme
-  author: Darshan Baral
-  description: Website title
+  title: kyuki's profile
+  author: kyuki
+  description: kyuki's profile
   copyright: >-
     powered by [hugo](https://gohugo.io/) & deployed on
     [netlify](https://www.netlify.com/)
@@ -24,34 +26,18 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
-    tagline: Title
-    location: "City Name, ST"
+    name: "kyuki"
+    location: "Kyoto, JP"
     photo: profile.jpg
   social:
     title: Links
     list:
-      - icon: fab fa-linkedin-in
-        url: "#"
-        title: LinkedIn
-      - icon: fab fa-stack-overflow
-        url: "#"
-        title: StackOverflow
       - icon: fab fa-github
-        url: "#"
+        url: "https://github.com/koooommmm"
         title: GitHub
-      - icon: fab fa-twitter
+      - icon: icon.png
         url: "#"
-        title: Twitter
-      - icon: fab fa-orcid
-        url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
-        url: "#"
-        title: Google Scholar
-      - icon: fab fa-researchgate
-        url: "#"
-        title: ResearchGate
+        title: Note
   showInAccordion:
     - item: aboutme
       expand: true
@@ -64,38 +50,37 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: "京都在住のエンジニア。町屋で暮らしつつゆるーく生きてます。"
   experience:
     title: Experiences
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
-        details: >-
-          Printed from desktop. Sent [emails](#). Called people using telephone.
-          Drank water from office cooler. Ate donuts on people's birthdays.
-      - position: Job Title
-        dates: 2018 - 2019
-        url: "#"
-        company: Company Name
+      - dates: 2023 - *現在*
+        company: メンバーズ
+      - dates: 2020 - 2023
+        company: NTTコムウェア
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
+      - degree: Master of Science
+        college: 神戸大学大学院システム情報学研究科
+        dates: 2018 - 2020
+      - degree: Bachelor of Science
+        college: 神戸大学工学部情報知能工学科
+        dates: 2014 - 2018
+  project:
+    title: Projects
+    icon: fas fa-project-diagram
+    list:
+      - title: 道路点検システム開発
+        description: 道路点検AIの精度向上やWebアプリケーション開発に従事
+      - title: ビジネスチャットサービスの運用
+        description: SREとして環境整備/デプロイ/障害対応に従事
+      - title: 故障修理支援システム移行
+        description: マスタデータ整備やパートナー企業の進捗管理に従事
+      - title: 自治体専用ビジネスチャット/電子申請システムの運用
+        description: SREとして環境整備/自動化/SLO策定に従事
   publication:
     title: Publications
     icon: fas fa-book
@@ -109,60 +94,63 @@ params:
       - Proceedings
     list:
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
+          柔軟膜ひずみセンサを用いた嚥下障害リハビリテーションのための喉頭挙上の検出
         date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
+        journal: "計測自動制御学会論文集, Vol.55, No.10, pp. 655-661 (2019-10)."
+        url: "https://www.jstage.jst.go.jp/article/sicetr/55/10/55_655/_article/-char/ja/"
         type: Journal Articles
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
+          柔軟膜ひずみセンサを用いた高齢者に対する嚥下リハビリテーションのための喉頭挙上検出
+        date: "2019"
+        journal: "第36回センシングフォーラム, 慶應義塾大学矢上キャンパス, 第36回センシングフォーラム資料, p.124 (2019-8)."
         type: Proceedings
-  project:
-    title: Projects
-    icon: fas fa-project-diagram
-    list:
-      - title: Project 1
-        url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
+      - title: >-
+          柔軟膜ひずみセンサを用いたバンド型デバイスによる喉頭挙上の検出
+        date: "2019"
+        journal: "平成30年度SICE関西支部・ISCIE若手研究発表会, 大阪工業大学梅田キャンパス, 予稿集USB, pp. 164-165 (2019-1)."
+        type: Proceedings
+      - title: >-
+          柔軟膜ひずみセンサを用いた装具デバイスによる喉頭運動の検出
+        date: "2018"
+        journal: "第19回公益社団法人計測自動制御学会システムインテグレーション部門講演会, 大阪工業大学梅田キャンパス, 予稿集USB, pp. 381-382 (2018-12)."
+        type: Proceedings
+      - title: >-
+          Laryngeal Elevation Detection for Mendelsohn Maneuver by Stretchable Strain Sensors
+        date: "2018"
+        journal: "40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC'18), Hawaii Convention Center, USA, FrPoS-31.19, (2018-7)."
+        type: Proceedings
+      - title: >-
+          柔軟膜ひずみセンサを用いた嚥下障害リハビリテーションのための喉頭挙上及び降下の検出
+        date: "2018"
+        journal: "第35回センシングフォーラム, pp. 147-152, (2018.8)."
+        type: Proceedings
   skill:
     title: Skills
     panelId: skill-panel
     icon: fas fa-cogs
-    list:
-      - skill: "Skill 1, Skill 2"
-        skillrating: 90
-      - skill: Skill 3
-        skillrating: 80
-      - skill: Skill 4
+    language:
+      - skill: "Python"
+        skillrating: 60
+      - skill: "JavaScript"
+        skillrating: 40
+      - skill: "Java"
+        skillrating: 20
+    frontend:
+      - skill: "jQuery"
+        skillrating: 20
+      - skill: "React"
+        skillrating: 10
+    backend:
+      - skill: "Django"
         skillrating: 50
-  hobby:
-    title: Hobbies
-    icon: fas fa-gamepad
-    list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+      - skill: "Express"
+        skillrating: 50
+    infra:
+      - skill: "AWS"
+        skillrating: 60
+      - skill: "Linux"
+        skillrating: 60
+      - skill: "Ansible"
+        skillrating: 60
+      - skill: "Terraform"
+        skillrating: 50
