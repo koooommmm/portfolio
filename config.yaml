@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: "https://koooommmm.github.io/portfolio/"
 languageCode: ja
 publishDir: docs
 canonifyurls: true
