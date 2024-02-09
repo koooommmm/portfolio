@@ -21,7 +21,7 @@
 {{ if hugo.IsProduction }}
 {{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
-<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+<link href="{{ $css.Permalink }}" rel="stylesheet" />
 
 
   {{/*  {{ with resources.Get "../assets/style.css" }}

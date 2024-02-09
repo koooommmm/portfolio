@@ -8,9 +8,6 @@ params:
   title: kyuki's profile
   author: kyuki
   description: kyuki's profile
-  copyright: >-
-    powered by [hugo](https://gohugo.io/) & deployed on
-    [netlify](https://www.netlify.com/)
   theme:
     mainTheme: dark
     showAttribute: true
