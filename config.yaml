@@ -61,14 +61,14 @@ params:
     title: Projects
     icon: fas fa-project-diagram
     list:
-      - title: 道路点検システム開発
-        description: 道路点検AIの精度向上やWebアプリケーション開発に従事
-      - title: ビジネスチャットサービスの運用
-        description: SREとして環境整備/デプロイ/障害対応に従事
-      - title: 故障修理支援システム移行
-        description: マスタデータ整備やパートナー企業の進捗管理に従事
       - title: 自治体専用ビジネスチャット/電子申請システムの運用
         description: SREとして環境整備/自動化/SLO策定に従事
+      - title: 故障修理支援システム移行
+        description: マスタデータ整備やパートナー企業の進捗管理に従事
+      - title: ビジネスチャットサービスの運用
+        description: SREとして環境整備/デプロイ/障害対応に従事
+      - title: 道路点検システム開発
+        description: 道路点検AIの精度向上やWebアプリケーション開発に従事
   publication:
     title: Publications
     icon: fas fa-book
